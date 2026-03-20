@@ -1,9 +1,16 @@
+"""
+Sales Data Generator Module
+Generates dummy sales data for testing CI/CD pipeline
+Last updated: March 20, 2026
+"""
+
 import os
 import pandas as pd
 from datetime import datetime, timedelta
 import random
 
 # Configuration
+DEFAULT_RECORDS_PER_REGION = 50
 OUTPUT_DIR = r"C:\Users\pratyush.panigrahy\OneDrive - drmartens.com\files"
 REGIONS = ["North", "South", "East", "West", "Northeast", "Northwest", "Southeast", "Southwest", "Central", "Coastal"]
 PRODUCTS = ["Product A", "Product B", "Product C", "Product D", "Product E"]
